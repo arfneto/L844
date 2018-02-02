@@ -2,8 +2,8 @@
 8.44 making classes iterable
 
 
-Buffer capacity is 10
-Total of data points is 20
+Buffer capacity is 5
+Total of data points is 6
 
 Starting test with empty buffer...
 Ring has 0 elements
@@ -39,43 +39,28 @@ Data 3
 *** end of display ring via RBL ***
 
 Starting test with buffer full...
-Ring has 10 elements
+Ring has 5 elements
 
-*** display ring via for(;;). Size is 10 ***
-Data 11
-Data 12
-Data 13
-Data 14
-Data 15
-Data 16
-Data 17
-Data 18
-Data 19
-Data 20
+*** display ring via for(;;). Size is 5 ***
+Data 2
+Data 3
+Data 4
+Data 5
+Data 6
 *** end of display ring via for(;;) ***
 
-*** display Ring using iterator. Size is 10 ***
-Data 11
-Data 12
-Data 13
-Data 14
-Data 15
-Data 16
-Data 17
-Data 18
-Data 19
-Data 20
+*** display Ring using iterator. Size is 5 ***
+Data 2
+Data 3
+Data 4
+Data 5
+Data 6
 *** end of display ring via iterator ***
 
-*** display ring via range-based loop. Size is 10 ***
-Data 11
-Data 12
-Data 13
-Data 14
-Data 15
-Data 16
-Data 17
-Data 18
-Data 19
-Data 20
+*** display ring via range-based loop. Size is 5 ***
+Data 2
+Data 3
+Data 4
+Data 5
+Data 6
 *** end of display ring via RBL ***

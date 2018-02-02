@@ -2,6 +2,7 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <exception>
 #include <string>
 
 // limits for tests, lecture is 8.44
@@ -59,18 +60,36 @@ public:
 		return;
 	}
 
-	T & get(int pos)
+	int capacity() const
+	{
+		return m_size;
+	}
+
+	T & get(int pos) 
 	{
 		return m_values[pos];
 	}
 
-	int size()
+	int getPos() const
+	{
+		return m_pos;
+	}
+
+
+	bool empty() const
+	{
+		return ((!m_isFull) && (m_pos == 0));
+	}
+
+	int size() const
 	{
 		if (m_isFull)return m_size;
 		return m_pos;
 	}
 
-	iterator begin()
+	// iterator methods
+
+	iterator begin() 
 	{
 		if (!m_isFull)return iterator(0, *this);
 		return iterator(m_pos, *this);
